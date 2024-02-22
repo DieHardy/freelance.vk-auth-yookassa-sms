@@ -1,0 +1,60 @@
+*,
+*::after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.video {
+    width: 120px;
+    height: auto;
+}
+
+.video__promo-n {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ngr-img-pic__img,
+.games-pic__img,
+.person-pic__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

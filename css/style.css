@@ -1,0 +1,272 @@
+body {
+    background: rgb(215, 222, 236);
+}
+
+.title-index {
+    text-align: center;
+    color: red;
+}
+
+.page {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid rgb(49, 49, 114); */
+    padding: 0 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu__item,
+.back {
+    margin: 15px 0;
+    background: rgb(189, 203, 230);
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.backr {
+    display: block;
+    width: 80px;
+}
+
+.menu__item:hover,
+.back:hover {
+    background: rgb(165, 165, 220)
+}
+
+.header-transform {
+    display: flex;
+    gap: 15px;
+}
+
+/* --------------- игры ------------------ */
+
+.games {
+    padding: 30px 0;
+}
+
+.games-pic {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.games-link:hover {
+    color: blue;
+    transition: .5s;
+}
+
+/* ------------- страница тегов ---------------- */
+
+.page-tags {
+    max-width: 1200px;
+    /* background: rgb(255, 249, 250); */
+    margin: 0 auto;
+    padding: 10px 50px;
+}
+
+.tags-title {
+    padding-top: 10px;
+}
+
+.main-tags {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.person-pic {
+    display: block;
+    clip-path: circle(50% at 50% 50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pers1 {
+    top: 47%;
+    left: 46%;
+}
+
+.pers2 {
+    top: 49%;
+    left: 54%;
+}
+
+.pers3 {
+    top: 60%;
+    left: 48%;
+}
+
+/* ------------- облачка ---------------- */
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    gap: 15px;
+}
+
+.card {
+    height: 38px;
+    width: 100px;
+    user-select: none;
+
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.card svg {
+    position: absolute;
+    z-index: 1;
+    width: 105px;
+}
+
+.card p {
+    z-index: 2;
+}
+
+.card-text {
+    width: 100px;
+    text-align: center;
+}
+
+.draggable-item {
+    padding: 25px;
+    cursor: move;
+}
+
+.drop-zones {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    /* margin-top: 150px; */
+    margin: 0 auto;
+}
+
+.drop-zones img {
+    z-index: 4;
+}
+
+.pushkin svg path {
+    fill: #60d778 !important;
+}
+
+.lermontov svg path {
+    fill: #f06f6d !important;
+}
+
+.krylov svg path {
+    fill: #fbe83e !important;
+}
+
+
+
+.pushkin-zone {
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+    top: 75px;
+    padding-bottom: 60px;
+    background: #9fd0a9;
+    width: 400px;
+    height: 400px;
+    padding-top: 60px;
+    transform: skew(0deg, 20deg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pushkin-zone .draggable-item {
+    transform: skew(0deg, -20deg);
+}
+
+.pushkin-zone img {
+    transform: skew(0deg, -20deg);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+.krylov-zone {
+    z-index: 2;
+    top: 75px;
+    position: absolute;
+    background: #fdf288;
+    width: 400px;
+    height: 400px;
+    padding-top: 60px;
+    transform: skew(0deg, -20deg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.krylov-zone img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transform: skew(0deg, 20deg);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.krylov-zone .draggable-item {
+    transform: skew(0deg, 20deg);
+}
+
+.lermontov-zone {
+    z-index: 1;
+    position: absolute;
+    background: #f29594;
+    left: 142px;
+    top: 450px;
+    width: 410px;
+    height: 240px;
+    padding-top: 60px;
+    transform: skew(115deg, 24deg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.lermontov-zone img {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transform: skew(-115deg, -24deg);
+}
+
+.lermontov-zone .draggable-item {
+    transform: skew(-115deg, -24deg);
+    scale: 0.5
+}
